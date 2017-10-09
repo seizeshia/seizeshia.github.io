@@ -35,21 +35,22 @@
         singlePageStickyNavigation: true,
         singlePageCounter: '<div class="cbp-popup-singlePage-counter">{{current}} of {{total}}</div>',
         singlePageCallback: function(url, element) {
-            // to update singlePage content use the following method: this.updateSinglePage(yourContent)
-            var t = this;
+        //     // to update singlePage content use the following method: this.updateSinglePage(yourContent)
+        //     var t = this;
 
-            $.ajax({
-                    url: url,
-                    type: 'GET',
-                    dataType: 'html',
-                    timeout: 30000
-                })
-                .done(function(result) {
-                    t.updateSinglePage(result);
-                })
-                .fail(function() {
-                    t.updateSinglePage('AJAX Error! Please refresh the page!');
-                });
+        //     $.ajax({
+        //             url: url,
+        //             type: 'GET',
+        //             dataType: 'html',
+        //             timeout: 30000
+        //         })
+        //         .done(function(result) {
+        //             t.updateSinglePage(result);
+        //         })
+        //         .fail(function() {
+        //             t.updateSinglePage('AJAX Error! Please refresh the page!');
+        //         });
         },
-    });
+    }
+);
 })(jQuery, window, document);
