@@ -9,7 +9,7 @@
  *
  */
 .cbp, .cbp *,
-.cbp *:after, .cbp:after, .cbp-l-filters-alignCenter, .cbp-l-filters-alignCenter *, .cbp-l-filters-alignCenter .cbp-filter-counter:after, .cbp-l-filters-alignLeft, .cbp-l-filters-alignLeft *, .cbp-l-filters-alignRight, .cbp-l-filters-alignRight *, .cbp-l-filters-alignRight .cbp-filter-counter:after, .cbp-l-filters-button, .cbp-l-filters-button *, .cbp-l-filters-button .cbp-filter-counter:after, .cbp-l-filters-buttonCenter, .cbp-l-filters-buttonCenter *, .cbp-l-filters-buttonCenter .cbp-filter-counter:after, .cbp-l-filters-dropdown, .cbp-l-filters-dropdown *, .cbp-l-filters-dropdownHeader:after, .cbp-l-filters-list, .cbp-l-filters-list *, .cbp-l-filters-work, .cbp-l-filters-work *, .cbp-l-filters-big, .cbp-l-filters-big *, .cbp-l-filters-text, .cbp-l-filters-text *, .cbp-l-filters-text .cbp-filter-counter:after, .cbp-l-filters-underline, .cbp-l-filters-underline *, .cbp-popup-wrap, .cbp-popup-wrap *, .cbp-popup-wrap:before, .cbp-popup-loadingBox:after, .cbp-l-loadMore-bgbutton, .cbp-l-loadMore-bgbutton *, .cbp-l-loadMore-button, .cbp-l-loadMore-button *, .cbp-l-loadMore-text, .cbp-l-loadMore-text *, .cbp-search, .cbp-search *, .cbp-search-icon:after {
+.cbp *:after, .cbp, .cbp-l-filters-alignCenter, .cbp-l-filters-alignCenter *, .cbp-l-filters-alignCenter .cbp-filter-counter:after, .cbp-l-filters-alignLeft, .cbp-l-filters-alignLeft *, .cbp-l-filters-alignRight, .cbp-l-filters-alignRight *, .cbp-l-filters-alignRight .cbp-filter-counter, .cbp-l-filters-button, .cbp-l-filters-button *, .cbp-l-filters-button .cbp-filter-counter:after, .cbp-l-filters-buttonCenter, .cbp-l-filters-buttonCenter *, .cbp-l-filters-buttonCenter .cbp-filter-counter, .cbp-l-filters-dropdown, .cbp-l-filters-dropdown *, .cbp-l-filters-dropdownHeader, .cbp-l-filters-list, .cbp-l-filters-list *, .cbp-l-filters-work, .cbp-l-filters-work *, .cbp-l-filters-big, .cbp-l-filters-big *, .cbp-l-filters-text, .cbp-l-filters-text *, .cbp-l-filters-text .cbp-filter-counter: , .cbp-l-filters-underline, .cbp-l-filters-underline *, .cbp-popup-wrap, .cbp-popup-wrap *, .cbp-popup-wrap:before, .cbp-popup-loadingBox:  , .cbp-l-loadMore-bgbutton, .cbp-l-loadMore-bgbutton *, .cbp-l-loadMore-button, .cbp-l-loadMore-button *, .cbp-l-loadMore-text, .cbp-l-loadMore-text *, .cbp-search, .cbp-search *, .cbp-search-icon:   {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -22,7 +22,7 @@
 .cbp-l-filters-alignCenter, .cbp-l-filters-alignCenter *, .cbp-l-filters-alignLeft, .cbp-l-filters-alignLeft *, .cbp-l-filters-alignRight, .cbp-l-filters-alignRight *, .cbp-l-filters-button, .cbp-l-filters-button *, .cbp-l-filters-buttonCenter, .cbp-l-filters-buttonCenter *, .cbp-l-filters-dropdown, .cbp-l-filters-dropdown *, .cbp-l-filters-list, .cbp-l-filters-list *, .cbp-l-filters-work, .cbp-l-filters-work *, .cbp-l-filters-big, .cbp-l-filters-big *, .cbp-l-filters-text, .cbp-l-filters-text *, .cbp-l-filters-underline, .cbp-l-filters-underline * {
   -webkit-tap-highlight-color: transparent; }
 
-.cbp:after, .cbp-lazyload:after, .cbp-popup-loadingBox:after, .cbp-popup-singlePageInline:after {
+.cbp, .cbp-popup-loadingBox, .cbp-popup-singlePageInline {
   content: '';
   position: absolute;
   width: 34px;
@@ -76,11 +76,11 @@
 .cbp-ready > * {
   visibility: visible; }
 
-.cbp-ready:after {
+/* .cbp-ready:   {
   display: none;
-  visibility: hidden; }
+  visibility: hidden; } */
 
-.cbp-lazyload {
+/* .cbp-lazyload {
   position: relative;
   background: #fff;
   display: block; }
@@ -91,8 +91,8 @@
   .cbp-lazyload img:not([data-cbp-src]) {
     -webkit-transition: opacity .7s ease-in-out;
     transition: opacity .7s ease-in-out; }
-  .cbp-lazyload:after {
-    z-index: 0; }
+  .cbp-lazyload:   {
+    z-index: 0; } */
 
 .cbp-wrapper-outer {
   overflow: hidden;
@@ -176,7 +176,7 @@
   width: 100%;
   height: 100%; }
 
-@-webkit-keyframes cbp-rotation {
+/* @-webkit-keyframes cbp-rotation {
   0 {
     -webkit-transform: rotate(0deg); }
   100% {
@@ -186,13 +186,13 @@
   0 {
     transform: rotate(0deg); }
   100% {
-    transform: rotate(360deg); } }
+    transform: rotate(360deg); } } */
 
-.clearfix:after {
+/* .clearfix:   {
   content: " ";
   display: block;
   height: 0;
-  clear: both; }
+  clear: both; } */
 
 .cbp-l-filters-left {
   float: left; }
@@ -629,7 +629,7 @@
   -webkit-transition: all .25s ease;
   transition: all .25s ease; }
 
-.cbp-l-filters-alignCenter .cbp-filter-counter:after {
+.cbp-l-filters-alignCenter .cbp-filter-counter {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -643,7 +643,7 @@
   border-top: 4px solid #626161;
   display: none; }
 
-.cbp-l-filters-alignCenter .cbp-filter-item:hover .cbp-filter-counter:after {
+.cbp-l-filters-alignCenter .cbp-filter-item:hover .cbp-filter-counter {
   display: block; }
 
 .cbp-l-filters-alignCenter .cbp-filter-item:hover .cbp-filter-counter {
@@ -695,7 +695,7 @@
     transition: all .3s ease-in-out; }
     .cbp-l-filters-alignRight .cbp-filter-item:hover {
       color: #2B3444; }
-      .cbp-l-filters-alignRight .cbp-filter-item:hover .cbp-filter-counter:after {
+      .cbp-l-filters-alignRight .cbp-filter-item:hover .cbp-filter-counter{
         display: block; }
       .cbp-l-filters-alignRight .cbp-filter-item:hover .cbp-filter-counter {
         bottom: 44px;
@@ -723,7 +723,7 @@
     opacity: 0;
     -webkit-transition: opacity .25s ease, bottom .25s ease;
     transition: opacity .25s ease, bottom .25s ease; }
-    .cbp-l-filters-alignRight .cbp-filter-counter:after {
+    .cbp-l-filters-alignRight .cbp-filter-counter{
       content: "";
       position: absolute;
       bottom: -4px;
@@ -782,7 +782,7 @@
   -webkit-transition: opacity .25s ease, bottom .25s ease;
   transition: opacity .25s ease, bottom .25s ease; }
 
-.cbp-l-filters-button .cbp-filter-counter:after {
+.cbp-l-filters-button .cbp-filter-counter {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -796,7 +796,7 @@
   border-top: 4px solid #545454;
   display: none; }
 
-.cbp-l-filters-button .cbp-filter-item:hover .cbp-filter-counter:after {
+.cbp-l-filters-button .cbp-filter-item:hover .cbp-filter-counter{
   display: block; }
 
 .cbp-l-filters-button .cbp-filter-item:hover .cbp-filter-counter {
@@ -848,7 +848,7 @@
   -webkit-transition: opacity .25s ease, bottom .25s ease;
   transition: opacity .25s ease, bottom .25s ease; }
 
-.cbp-l-filters-buttonCenter .cbp-filter-counter:after {
+.cbp-l-filters-buttonCenter .cbp-filter-counter {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -862,7 +862,7 @@
   border-top: 4px solid #68ABBC;
   display: none; }
 
-.cbp-l-filters-buttonCenter .cbp-filter-item:hover .cbp-filter-counter:after {
+.cbp-l-filters-buttonCenter .cbp-filter-item:hover .cbp-filter-counter{
   display: block; }
 
 .cbp-l-filters-buttonCenter .cbp-filter-item:hover .cbp-filter-counter {
@@ -889,7 +889,7 @@
   cursor: default;
   position: relative; }
 
-.cbp-l-filters-dropdownHeader:after {
+.cbp-l-filters-dropdownHeader {
   border-color: #FFFFFF transparent;
   border-style: solid;
   border-width: 5px 5px 0;
@@ -901,7 +901,7 @@
   width: 0;
   margin-top: -1px; }
 
-.cbp-l-filters-dropdownWrap.cbp-l-filters-dropdownWrap-open .cbp-l-filters-dropdownHeader:after {
+.cbp-l-filters-dropdownWrap.cbp-l-filters-dropdownWrap-open .cbp-l-filters-dropdownHeader{
   border-width: 0 5px 5px; }
 
 .cbp-l-filters-dropdownList {
@@ -1028,7 +1028,7 @@
 .cbp-l-filters-work .cbp-filter-counter:before {
   content: '('; }
 
-.cbp-l-filters-work .cbp-filter-counter:after {
+.cbp-l-filters-work .cbp-filter-counter {
   content: ')'; }
 
 .cbp-l-filters-big {
@@ -1097,7 +1097,7 @@
   -webkit-transition: all .25s ease;
   transition: all .25s ease; }
 
-.cbp-l-filters-text .cbp-filter-counter:after {
+.cbp-l-filters-text .cbp-filter-counter {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -1111,7 +1111,7 @@
   border-top: 4px solid #626161;
   display: none; }
 
-.cbp-l-filters-text .cbp-filter-item:hover .cbp-filter-counter:after {
+.cbp-l-filters-text .cbp-filter-item:hover .cbp-filter-counter {
   display: block; }
 
 .cbp-l-filters-text .cbp-filter-item:hover .cbp-filter-counter {
@@ -2530,11 +2530,11 @@
   top: 0;
   left: 0; }
 
-.cbp-popup-lightbox .cbp-popup-loadingBox:after {
+/* .cbp-popup-lightbox .cbp-popup-loadingBox:after {
   border-left: 3px solid rgba(255, 255, 255, 0.3);
   border-right: 3px solid rgba(255, 255, 255, 0.3);
   border-bottom: 3px solid rgba(255, 255, 255, 0.3);
-  border-top: 3px solid rgba(255, 255, 255, 0.85); }
+  border-top: 3px solid rgba(255, 255, 255, 0.85); } */
 
 .cbp-popup-ready .cbp-popup-loadingBox {
   visibility: hidden;
